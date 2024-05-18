@@ -1,0 +1,21 @@
+<div class="container">
+  <ngx-parent></ngx-parent>         <!--componente de parent donde va la card con el texto --> 
+  <div class="button-container">
+    <ngx-void-button                     
+      [text]="'Cancelar'"
+      [btnClass]="'btn btn-secondary'"
+      ></ngx-void-button>                <!--primer botón de cancelar, sólo se le cambia el text y la class --> 
+      <ngx-void-button
+      [text]="'Aceptar'"
+      [btnClass]="'btn btn-primary'"
+    ></ngx-void-button>                  <!--segundo botón reutilizable con propiedades distintas --> 
+    <ngx-void-button
+      [text]="'Abrir Modal'"
+      [btnClass]="'btn btn-success'"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    ></ngx-void-button>                 <!--Tercer botón --> 
+  </div>
+</div>
+
+<ngx-modal></ngx-modal>                <!--Componente modal --> 

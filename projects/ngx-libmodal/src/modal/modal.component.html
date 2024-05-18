@@ -1,0 +1,36 @@
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          magni odit aspernatur doloribus dolores, reprehenderit eveniet, quos
+          vero rerum porro quibusdam necessitatibus culpa accusantium? Cum amet
+          consectetur accusantium officia voluptate.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <ngx-void-button                  
+          [text]="'Cerrar'"
+          [btnClass]="'btn btn-modal-close btn-secondary'"
+          data-bs-dismiss="modal"
+        >
+        </ngx-void-button>
+        <ngx-void-button
+          [text]="'Guardar'"
+          [btnClass]="'btn btn-modal-save btn-primary'"
+        >
+        </ngx-void-button>
+      </div>
+    </div>
+  </div>
+</div>
