@@ -24,7 +24,7 @@
   margin-top: 20px;
 }
 
-@media (max-width: 600px) {  //para dar responsividad a pantallas mas pequeñas
+@media (max-width: 600px) {  /*para dar responsividad a pantallas mas pequeñas*/
   .button-container {
     flex-direction: column;
   }
