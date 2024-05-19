@@ -1,25 +1,48 @@
-# NgxLibmodal
+# Empaquetar y publicar en NPM.
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
-(image.png)
+## Asegurar archivos.
 
-## Code scaffolding
+Para empaquetar la librería se debe configurar los archivos de styles.css y/o index.html (como en nuestro caso) de la librería, ingresándola en *ng-package.json*,
+tambien se debe agregar las exportaciones de los archivos necesarios en el archivo *public-api.ts*, por ejemplo: *export * from './modal/modal.component';*
 
-Run `ng generate component component-name --project ngx-libmodal` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-libmodal`.
-> Note: Don't forget to add `--project ngx-libmodal` or else it will be added to the default project in your `angular.json` file. 
+## Ingresar ng build.
 
-## Build
+Para empaquetar la librería, en este caso se debe ingresar el siguiente comando en la terminal:
 
-Run `ng build ngx-libmodal` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+ng build ngx-libmodal
 
-## Publishing
+´´´
 
-After building your library with `ng build ngx-libmodal`, go to the dist folder `cd dist/ngx-libmodal` and run `npm publish`.
+Con este comando estamos compilando y generando la carpeta dist de la librería.
 
-## Running unit tests
+(para generar librería y probarla, antes de publicar se debe leer README).
 
-Run `ng test ngx-libmodal` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Crear cuenta en NPM y login.
 
-## Further help
+Una vez comprobado que la librería funciona correctamente en un proyecto generado desde 0, se puede publicar en https://www.npmjs.com/, se debe crear una cuenta antes.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ya con la cuenta generada, en la terminal posicionados dentro de carpeta dist, por ejemplo en nuestro caso: "dist\ngx-libmodal", se ingresa el comando:
+
+```
+ng login
+
+´´´
+
+Se abrirá la web de *npmjs* para confirmar la sesión.
+
+## Publicar librería.
+
+Antes de publicar la librería en la web puedes agregar tus datos como autor, en el archivo *package.json* por ejemplo con esta estructura, agregándolo en la última línea,
+
+```
+"author":{
+    "name": "Tu-nombre",
+    "email": "Tu-correo",
+    "url": "Tu-web o repositorio"
+  }
+
+´´´
+Finalmente ejecuta run `npm publish`, y puedes entrar en la web para comprobar que está publicada tu librería.
+
+
