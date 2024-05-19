@@ -12,7 +12,7 @@ Para empaquetar la librería, en este caso se debe ingresar el siguiente comando
 ```
 ng build ngx-libmodal
 
-´´´
+```
 
 Con este comando estamos compilando y generando la carpeta dist de la librería.
 
@@ -27,7 +27,7 @@ ya con la cuenta generada, en la terminal posicionados dentro de carpeta dist, p
 ```
 ng login
 
-´´´
+```
 
 Se abrirá la web de *npmjs* para confirmar la sesión.
 
@@ -42,7 +42,8 @@ Antes de publicar la librería en la web puedes agregar tus datos como autor, en
     "url": "Tu-web o repositorio"
   }
 
-´´´
+```
+
 Finalmente ejecuta run `npm publish`, y puedes entrar en la web para comprobar que está publicada tu librería.
 
 
